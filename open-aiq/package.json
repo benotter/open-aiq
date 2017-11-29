@@ -1,0 +1,42 @@
+{
+  "name": "@otter-co/open-aiq",
+  "version": "1.0.0",
+  "description": "Open AI Query",
+  "main": "bin/index.js",
+  "bin": {
+    "open-aiq": "bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "npm run build",
+    "build": "tsc -p ./",
+    "buildwatch": "tsc -w -p ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benotter/open-aiq.git"
+  },
+  "author": "Ben Otter <benotter@me.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/benotter/open-aiq/issues"
+  },
+  "homepage": "https://github.com/benotter/open-aiq#readme",
+  "dependencies": {
+    "typescript": "^2.6.2"
+  },
+  "tsconfig": {
+    "compilerOptions": {
+      "target": "es2015",
+      "module": "commonjs",
+      "outDir": "bin",
+      "sourceMap": true
+  },
+  "include": [
+      "src/**/*"
+  ],
+  "exclude": [
+      "node_modules"
+  ]
+  }
+}
